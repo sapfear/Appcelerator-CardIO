@@ -14,6 +14,7 @@
     BOOL paypalLogo;
     BOOL cardIOLogo;
     BOOL collectCVV;
+    BOOL collectDate;
     NSString* locale;
     UIColor *guideColor;
 }

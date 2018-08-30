@@ -4,3 +4,4 @@ android/build/
 iphone/dist/
 iphone/build/
 iphone/*.zip
+.idea/

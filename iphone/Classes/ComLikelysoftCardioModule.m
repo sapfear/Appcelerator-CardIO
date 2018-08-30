@@ -40,6 +40,7 @@
     paypalLogo = YES;
     cardIOLogo = NO;
     collectCVV = YES;
+    collectDate = YES;
     locale = @"en";
 
 	NSLog(@"[INFO] %@ loaded",self);
@@ -118,6 +119,11 @@
     collectCVV = [numValue boolValue];
 }
 
+-(void)setCollectDate:(id)value {
+    NSNumber * numValue = [value retain];
+    collectDate = [numValue boolValue];
+}
+
 -(id)guideColor {
     return [[[TiColor alloc] initWithColor:guideColor name:@"#fff"] autorelease];
 }
@@ -154,6 +160,7 @@
     scanViewController.useCardIOLogo = cardIOLogo;
     scanViewController.languageOrLocale = locale;
     scanViewController.collectCVV = collectCVV;
+    scanViewController.collectExpiry = collectDate;
     
     if (guideColor) {
         scanViewController.guideColor = guideColor;

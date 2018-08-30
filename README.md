@@ -17,6 +17,7 @@ Methods:
 * setLocale(String)
 * setGuideColor(Ti.Color)
 * setCollectCVV(bool)
+* setCollectDate(bool)
 * scanCard()
 
 Events:
